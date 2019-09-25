@@ -11,5 +11,5 @@ import { Component } from '@angular/core';
 // }
 
 export class AppComponent { todoArray=[]
-  deleteItem(){   console.log("delete item")  };
+  deleteItem(todo){   for(let i=0 ;i<= this.todoArray.length ;i++){    if(todo== this.todoArray[i]){     this.todoArray.splice(i,1)    }   }  }
   addTodo(value){this.todoArray.push(value)} };
